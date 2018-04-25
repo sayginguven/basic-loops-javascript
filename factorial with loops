@@ -1,0 +1,17 @@
+// sum = 1*5*4*3*2*1
+var i = 5;
+var sum = 1;
+while(i >0){
+    sum *= i; // sum = sum * i
+    i -= 1;
+}
+console.log(sum);
+
+
+// sum = 1*5*4*3*2*1
+var sum = 1;
+var j;
+for (j = 5; j >0; j-=1){
+    sum *=j; //sum = sum * number
+}
+console.log(sum);
