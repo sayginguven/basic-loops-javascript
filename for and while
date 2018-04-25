@@ -10,5 +10,12 @@ for(i = 0; i < 10; i+=1){
 var j = 0;
 while(j < 10){
   console.log(j);
-  j+=1; // do not forget this line, it will cause infinite loop without condition.
+  j+=1; // do not forget this line, it will cause infinite loop without this.
 }
+
+//do while loop
+var k;
+do {
+  console.log(k);
+  k+=1; // do not forget this line, it will cause infinite loop without this.
+} while( k<10 );
