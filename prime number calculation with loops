@@ -1,0 +1,15 @@
+var i;
+for (i = 2; i < 100; i += 1) {
+    var divider = 2;
+    while (divider < i) {
+        if (i % divider == 0) {
+            //console.log(i + " is not prime");
+            break;
+        } else {
+            divider += 1;
+            if (i == divider) {
+                console.log(i + " is prime number");
+            }
+        }
+    }
+}
