@@ -1,0 +1,17 @@
+//a simple foreach for an input box
+
+//      <input type="text" class="myForm">
+//      <input type="number" class="myForm">
+//      <input type="email" class="myForm">
+//      <input type="password" class="myForm">
+
+
+<script>
+window.addEventListener('load', function(){
+     Array.from(document.getElementsByClassName('myForm')).forEach(function(item){
+        item.addEventListener('change', function(){
+           item.style.background = "lightblue";
+        });
+     })           
+});
+</script>
