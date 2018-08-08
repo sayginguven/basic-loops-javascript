@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title> Digital Time  </title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Digital clock with SVG, HTML5, and Javascript">
+      <meta name="keywords" content="HTML,CSS,JavaScript,SVG">
+      <meta name="developer" content="Saygin Guven">
+   </head>
+   <body>
+      <svg version="1.1" width="900" height="300" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+         <!-- FIRST HOUR DIGIT --> 
+         <rect id="Area1Rect1" x=0 y=0 rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area1Rect2" x=80 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area1Rect3" x=80 y=140 rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area1Rect4" x=0 y=240  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area1Rect5" x=0 y=140  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area1Rect6" x=0 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area1Rect7" x=0 y=120  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <!-- SECOND HOUR DIGIT -->
+         <rect id="Area2Rect1" x=110 y=0 rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area2Rect2" x=190 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area2Rect3" x=190 y=140 rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area2Rect4" x=110 y=240  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area2Rect5" x=110 y=140  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area2Rect6" x=110 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area2Rect7" x=110 y=120  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <!-- FIRST MINUTES DIGIT -->
+         <circle id="Area1Circ1" cx=250 cy=150 r="15" fill="black" />
+         <circle id="Area1Circ2" cx=250 cy=250 r="15" fill="black" />
+         <!-- FIRST MINUTES DIGIT -->
+         <rect id="Area3Rect1" x=290 y=0 rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area3Rect2" x=370 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area3Rect3" x=370 y=140 rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area3Rect4" x=290 y=240  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area3Rect5" x=290 y=140  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area3Rect6" x=290 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area3Rect7" x=290 y=120  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <!-- SECOND MINUTES DIGIT -->
+         <rect id="Area4Rect1" x=400 y=0 rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area4Rect2" x=480 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area4Rect3" x=480 y=140 rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area4Rect4" x=400 y=240  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area4Rect5" x=400 y=140  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area4Rect6" x=400 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area4Rect7" x=400 y=120  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <circle id="Area2Circ1" cx=540 cy=150 r="15" fill="black" />
+         <circle id="Area2Circ2" cx=540 cy=250 r="15" fill="black" />
+         <!-- FIRST SECOND DIGIT -->
+         <rect id="Area5Rect1" x=580 y=0 rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area5Rect2" x=660 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area5Rect3" x=660 y=140 rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area5Rect4" x=580 y=240  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area5Rect5" x=580 y=140  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area5Rect6" x=580 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area5Rect7" x=580 y=120  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <!-- SECOND SECOND DIGIT -->
+         <rect id="Area6Rect1" x=690 y=0 rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area6Rect2" x=770 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area6Rect3" x=770 y=140 rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area6Rect4" x=690 y=240  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+         <rect id="Area6Rect5" x=690 y=140  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area6Rect6" x=690 y=20  rx=10 ry=10 width="20" height="100" fill="#ffffc0" />
+         <rect id="Area6Rect7" x=690 y=120  rx=10 ry=10 width="100" height="20" fill="#ffffc0" />
+      </svg>
+      <script>
+         // call timer function every second
+         setInterval(timer, 1000);
+         
+         function timer() {
+         
+             cleanSVG();
+         
+             T = new Date(); //Fri Aug 03 2018 14:18:41 GMT-0700 (Pacific Daylight Time)
+             h = T.getHours(); // 14
+             m = T.getMinutes(); // 18
+             s = T.getSeconds(); // 41
+         
+             // seperates the digis 12:18:41
+             //                     [1,2,1,8,4,1]
+             seperatedTimeDigits = [Math.floor(h / 10), h % 10, Math.floor(m / 10), m % 10, Math.floor(s / 10), s % 10];
+         
+             //creates the digit 0
+             //  _
+             // | |
+             // |_|
+             //
+             function digital0(i) {
+                 let counterArray = [1, 2, 3, 4, 5, 6];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "red";
+                 }
+             }//end of digital0
+         
+             //   
+             //   | creates the digit 1
+             //   |
+             // 
+             function digital1(i) {
+                 let counterArray = [2, 3];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "red";
+                 }
+             }//end of digital1
+         
+         
+             //  _  
+             //  _| creates the digit 2
+             // |_
+             // 
+             function digital2(i) {
+                 let counterArray = [1, 2, 4, 5, 7];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "red";
+                 }
+             }//end of digital2
+         
+         
+             //  _ 
+             //  _| creates the digit 3
+             //  _|
+             // 
+             function digital3(i) {
+                 let counterArray = [1, 2, 3, 4, 7];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "red";
+                 }
+             }//end of digital3
+         
+         
+             //   
+             // |_| creates the digit 4
+             //   |
+             // 
+             function digital4(i) {
+                 let counterArray = [2, 3, 6, 7];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "red";
+                 }
+             }//end of digital4
+         
+         
+             //  _ 
+             // |_  creates the digit 5
+             //  _|
+             // 
+             function digital5(i) {
+                 let counterArray = [1, 3, 4, 6, 7];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "red";
+                 }
+             }//end of digital5
+         
+         
+             //  _ 
+             // |_  creates the digit 6
+             // |_|
+             // 
+             function digital6(i) {
+                 let counterArray = [1, 3, 4, 5, 6, 7];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "red";
+                 }
+             }//end of digital6
+         
+         
+             //  _ 
+             //   | creates the digit 7
+             //   |
+             // 
+             function digital7(i) {
+                 let counterArray = [1, 2, 3];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "red";
+                 }
+             }//end of digital7
+         
+             
+             //  _ 
+             // |_| creates the digit 8
+             // |_|
+             // 
+             function digital8(i) {
+                 let counterArray = [1, 2, 3, 4, 5, 6, 7];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "red";
+                 }
+             }//end of digital8
+         
+             
+             //  _ 
+             // |_| creates the digit 9
+             //  _|
+             // 
+             function digital9(i) {
+                 let counterArray = [1, 2, 3, 4, 6, 7];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "red";
+                 }
+             }//end of digital9
+         
+         
+             //check the digit number from seperatedTimeDigits
+             //based on the value it will call the function digitalX(arg)
+             //X is the value of the digit
+             //arg is the order of digit
+             for (let j = 0; j <= 5; j++) {
+                 (seperatedTimeDigits[j] == 0) ? digital0(j + 1): console.log();
+                 (seperatedTimeDigits[j] == 1) ? digital1(j + 1): console.log();
+                 (seperatedTimeDigits[j] == 2) ? digital2(j + 1): console.log();
+                 (seperatedTimeDigits[j] == 3) ? digital3(j + 1): console.log();
+                 (seperatedTimeDigits[j] == 4) ? digital4(j + 1): console.log();
+                 (seperatedTimeDigits[j] == 5) ? digital5(j + 1): console.log();
+                 (seperatedTimeDigits[j] == 6) ? digital6(j + 1): console.log();
+                 (seperatedTimeDigits[j] == 7) ? digital7(j + 1): console.log();
+                 (seperatedTimeDigits[j] == 8) ? digital8(j + 1): console.log();
+                 (seperatedTimeDigits[j] == 9) ? digital9(j + 1): console.log();
+             }
+         } // end of timer function
+         
+         //clean SVG will remove the SVG elements to default background
+         function cleanSVG() {
+             let i;
+             for (i = 1; i <= 6; i += 1) {
+                 let counterArray = [1, 2, 3, 4, 5, 6, 7];
+                 let j;
+                 for (j = 0; j<(counterArray.length); j += 1) {
+                     document.getElementById("Area" + i + "Rect" + counterArray[j]).style.fill = "#ffffc0";
+                 }
+             }
+         }
+      </script>
+   </body>
+</html>
