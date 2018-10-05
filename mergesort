@@ -1,0 +1,54 @@
+var nums = [2,5,200,100,9,87,91,110,-8];
+
+//or function mergesort(nums){
+var mergesort = function(nums){
+  
+  	if(nums.length < 2)
+    {
+    	return nums;
+    }
+    
+    const lengthOfArray = nums.length;
+    const middleOfArray = Math.floor(lengthOfArray / 2); 
+    
+    let leftPartOfArray = nums.slice(0,middleOfArray);
+    let rightPartOfArray = nums.slice(middleOfArray, lengthOfArray);
+
+    
+    let sortedLeft = mergesort(leftPartOfArray);
+    let sortedRight = mergesort(rightPartOfArray);
+    
+    return stitch(sortedLeft,sortedRight);
+    
+}
+
+
+function stitch(left,right){
+
+	const result = [];
+
+  
+while(left.length > 0  && right.length > 0){
+    if(left[0] <= right[0]){
+      result.push(left.shift());
+    } else {
+      result.push(right.shift());
+    }
+}   
+
+
+/*     console.log("result: " + result);
+     */
+  
+/*  while(left.length){
+    result.push(left.shift());
+  }
+  while(right.length){
+       result.push(right.shift());
+  }   */
+  return result;   
+} 
+
+mergesort(nums);
+
+console.log(nums)
