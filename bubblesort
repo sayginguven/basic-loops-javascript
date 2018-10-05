@@ -1,0 +1,26 @@
+var nums = [2,5,6,100,9,87,91,110,-8];
+
+
+//or function bubblesort(nums){
+var bubblesort = function(nums){
+
+  do{
+  
+  var swapped = false;
+  
+    for(var i = 0; i<nums.length; i+=1){
+      if(nums[i] > nums[i+1]){
+      var temp = nums[i];
+      nums[i] = nums[i+1];
+      nums[i+1] = temp;
+      swapped = true;
+      }
+    }
+  
+  } while (swapped)
+  
+  
+}
+bubblesort(nums);
+
+console.log(nums)
