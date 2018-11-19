@@ -1,0 +1,25 @@
+body{
+	text-align: center;
+}
+
+div{
+	height: 150px;
+	width: 150px;
+	background-color: #8B41FF;
+	color: 	white;
+	border-radius: 50%;
+}
+div:nth-child(2){
+	background-color: #E86957;
+}
+
+p{
+	font-size: 32px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+span{
+	font-size: 50px;
+}
