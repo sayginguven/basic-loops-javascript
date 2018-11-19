@@ -6,10 +6,10 @@ let projectCounter = (function() {
     }
 }());
 
-setInterval(function(){
+let clearAt100 = setInterval(function(){
 	let projects = projectCounter(); 
 	if(projects >100){
-		clearInterval(projects);
+		clearInterval(clearAt100);
 	} else{
 		document.getElementsByClassName("demo")[0].innerHTML = projects;
 	}
