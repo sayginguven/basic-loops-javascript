@@ -1,0 +1,18 @@
+ var quickSort = (theArray) => {
+      let collectSmallNumbers = []; 
+      let collectLargerNumbers = [];
+      if (theArray.length <= 1){
+         return theArray;
+      }
+      
+      let i;
+      for (i = 1; i < theArray.length; i+=1) { 
+         if (theArray[i] < theArray[0]){
+            collectSmallNumbers.push(theArray[i]); 
+         }
+         if (theArray[i] >= theArray[0]){ 
+            collectLargerNumbers.push(theArray[i]);
+            } 
+      }
+      return quickSort(collectSmallNumbers).concat(theArray[0], quickSort(collectLargerNumbers));
+   }
