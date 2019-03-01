@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title></title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#whoAmI{
+			border:  none;
+			outline: none;
+			display: block;
+			font-family:  monospace;
+			font-size: 30px;
+			color: #F9423A;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<input type="text" id="whoAmI" autofocus="true">
+	</div>
+<script>
+let title = 0;
+const a = document.getElementById("whoAmI");
+
+let startAnimation = function(){
+	text = ["instructor" ,"developer", "programmer", "engineer"];
+
+	let i=0;
+	
+	let type = setInterval(function(){
+		a.value += text[title].charAt(i);
+	 	i+=1;
+	}, 120);
+	
+	
+	function stopTyping(){
+		clearInterval(type);
+	}
+
+	setTimeout(function(){
+		 i= a.value.length -1;
+		 stopTyping();
+	     let deleteTyped = setInterval(function(){
+			a.value = text[title].substring(0, i);
+			i-=1;
+			if(a.value == ""){
+				clearInterval(deleteTyped);
+			}
+	  	},50);
+	}, 5000); 
+
+	title +=1;
+	if(title==4) title=0;
+} 
+	
+if(a.value == ""){
+	startAnimation();
+}
+
+setInterval(function(){
+	startAnimation();	
+}, 7000);
+
+</script> 
+
+</body>
+</html>
